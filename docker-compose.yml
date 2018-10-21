@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  mvc:
+    image: ${DOCKER_REGISTRY}mvc
+    build:
+      context: .
+      dockerfile: src/MVC/Dockerfile
+
+  api:
+    image: ${DOCKER_REGISTRY}api
+    build:
+      context: .
+      dockerfile: src/API/Dockerfile
+
