@@ -1,0 +1,31 @@
+[
+  {
+    "outputFileName": "wwwroot/js/site.min.js",
+    "inputFiles": [
+      "wwwroot/js/site.js"
+    ]
+  },
+  /*  VUEJS/VUEX and VUEJS/VUEX MIN */
+  {
+    "outputFileName": "wwwroot/js/vue.js",
+    "inputFiles": [
+      "wwwroot/lib/vue/dist/vue.js",
+      "wwwroot/lib/vuex/vuex.js"
+    ],
+    "minify": {
+      "enabled": false,
+      "renameLocals": false
+    }
+  },
+  {
+    "outputFileName": "wwwroot/js/vue.min.js",
+    "inputFiles": [
+      "wwwroot/lib/vue/dist/vue.js",
+      "wwwroot/lib/vuex/vuex.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": false
+    }
+  }
+]
